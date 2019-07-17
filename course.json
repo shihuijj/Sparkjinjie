@@ -1,0 +1,86 @@
+{
+  "version": "1",
+  "title": "Spark进阶之淘宝双十一数据分析与预测",
+  "author": "admin",
+  "description": "实验简介 本地数据集上传到数据仓库hive Hive数据分析 将数据从Hive导入到MySQL 利用Spark预测回头客 利用ECharts进行数据可视化分析 ",
+  "scenarios": [
+    {
+      "title": "实验简介",
+      "environment": "registry.cn-shanghai.aliyuncs.com/kfcoding/kfcoding-envs:cloudware-hadoop-latest",
+	   "binds": ["/kfcampus/public:/root/Desktop/myFile", "/userfile:/data:ro"], 
+      "steps": [
+        {         
+          "title": "实验简介",
+          "text": "scenarios/实验简介.md",
+		  "program": "scripts/pre.sh",
+          "extraTab": "[domain]:[:5678]/desktop.html"
+        }
+      ]
+    },
+    {
+      "title": "实验1：本地数据集上传到数据仓库hive",
+      "environment": "registry.cn-shanghai.aliyuncs.com/kfcoding/kfcoding-envs:cloudware-hadoop-latest",
+	   "binds": ["/kfcampus/public:/root/Desktop/myFile", "/userfile:/data:ro"], 
+      "steps": [
+        {
+          "title": "实验1：本地数据集上传到数据仓库hive",
+          "text": "scenarios/实验1：本地数据集上传到数据仓库hive.md",
+		  "program": "scripts/pre.sh",
+          "extraTab": "[domain]:[:5678]/desktop.html"
+        }
+      ]
+    },
+    {
+      "title": "实验2：Hive数据分析",
+      "environment": "registry.cn-shanghai.aliyuncs.com/kfcoding/kfcoding-envs:cloudware-hadoop-latest",
+	   "binds": ["/kfcampus/public:/root/Desktop/myFile", "/userfile:/data:ro"], 
+      "steps": [
+        {
+          "title": "实验2：Hive数据分析",
+          "text": "scenarios/实验2：Hive数据分析.md",
+		  "program": "scripts/pre.sh",
+          "extraTab": "[domain]:[:5678]/desktop.html"
+        }
+      ]
+    },
+    {
+      "title": "实验3：将数据从Hive导入到MySQL",
+      "environment": "registry.cn-shanghai.aliyuncs.com/kfcoding/kfcoding-envs:cloudware-hadoop-latest",
+	   "binds": ["/kfcampus/public:/root/Desktop/myFile", "/userfile:/data:ro"], 
+      "steps": [
+        {
+          "title": "实验3：将数据从Hive导入到MySQL",
+          "text": "scenarios/实验3：将数据从Hive导入到MySQL.md",
+		  "program": "scripts/pre.sh",
+          "extraTab": "[domain]:[:5678]/desktop.html"
+        }
+      ]
+    },
+    {
+      "title": "实验4：利用Spark预测回头客",
+      "environment": "registry.cn-shanghai.aliyuncs.com/kfcoding/kfcoding-envs:cloudware-hadoop-latest",
+	   "binds": ["/kfcampus/public:/root/Desktop/myFile", "/userfile:/data:ro"], 
+      "steps": [
+        {
+          "title": "实验4：利用Spark预测回头客",
+          "text": "scenarios/实验4：利用Spark预测回头客.md",
+		  "program": "scripts/pre.sh",
+          "extraTab": "[domain]:[:5678]/desktop.html"
+        }
+      ]
+    },
+    {
+      "title": "实验5：利用ECharts进行数据可视化分析",
+      "environment": "registry.cn-shanghai.aliyuncs.com/kfcoding/kfcoding-envs:cloudware-hadoop-latest",
+	   "binds": ["/kfcampus/public:/root/Desktop/myFile", "/userfile:/data:ro"], 
+      "steps": [
+        {
+          "title": "实验5：利用ECharts进行数据可视化分析",
+          "text": "scenarios/实验5：利用ECharts进行数据可视化分析.md",
+		  "program": "scripts/pre.sh",
+          "extraTab": "[domain]:[:5678]/desktop.html"
+        }
+      ]
+    }
+  ]
+}

@@ -21,28 +21,28 @@ tomcat 已安装在 /usr/local/tomcat 路径下
 1. 打开Eclipse，点击“File”菜单，或者通过工具栏的“New”创建Dynamic Web Project，弹出向导对话框
 填入Project name后，并点击”New Runtime”,如下图所示：
 
-![5-1](https://kfcoding-static.oss-cn-hangzhou.aliyuncs.com/gitcourse-bigdata/5-1_20180420073458.058.png)
+![5-1](/images/5-1_20180420073458.058.png)
 
 2. 出现New Server Runtime Environment向导对话框,选择“Apache Tomcat v8.0”,点击next按钮,如下图：
 
-![5-2](https://kfcoding-static.oss-cn-hangzhou.aliyuncs.com/gitcourse-bigdata/5-2_20180420073502.002.png)
+![5-2](/images/5-2_20180420073502.002.png)
 
 3. 选择Tomcat安装文件夹，如下图：
 
-![5-3](https://kfcoding-static.oss-cn-hangzhou.aliyuncs.com/gitcourse-bigdata/5-3_20180420073507.007.png)
+![5-3](/images/5-3_20180420073507.007.png)
 选择tomcat的路径 /usr/local/tomcat
 
 4. 返回New Server Runtime Environment向导对话框，点击finish即可。如下图：
 
-![5-4](https://kfcoding-static.oss-cn-hangzhou.aliyuncs.com/gitcourse-bigdata/5-4_20180420073511.011.png)
+![5-4](/images/5-4_20180420073511.011.png)
 
 5. 返回Dynamic Web Project向导对话框，点击finish即可。如下图：
 
-![5-5](https://kfcoding-static.oss-cn-hangzhou.aliyuncs.com/gitcourse-bigdata/5-5_20180420073515.015.png)
+![5-5](/images/5-5_20180420073515.015.png)
 
 6. 这样新建一个Dynamic Web Project就完成了。在Eclipse中展开新建的MyWebApp项目，初始整个项目框架如下：
 
-![5-6](https://kfcoding-static.oss-cn-hangzhou.aliyuncs.com/gitcourse-bigdata/5-6_20180420073518.018.png)
+![5-6](/images/5-6_20180420073518.018.png)
 
 src文件夹用来存放Java服务端的代码，例如:读取数据库MySQL中的数据
 WebContent文件夹则用来存放前端页面文件，例如：前端页面资源css、img、js，前端JSP页面
@@ -59,7 +59,7 @@ cp /usr/local/mysql-connector-java/mysql-connector-java-5.1.46-bin.jar ~/eclipse
 ### 3. 利用Eclipse 开发Dynamic Web Project应用
 整个项目开发完毕的项目结构，如下：
 
-![5-7](https://kfcoding-static.oss-cn-hangzhou.aliyuncs.com/gitcourse-bigdata/5-7_20180420073522.022.png)
+![5-7](/images/5-7_20180420073522.022.png)
 
 src目录用来存放服务端Java代码，WebContent用来存放前端页面的文件资源与代码。其中css目录用来存放外部样式表文件、font目录用来存放字体文件、img目录存放图片资源文件、js目录存放JavaScript文件，lib目录存放Java与mysql的连接库。
 相关代码已经创建好并放在 /data/spark/MyWebApp,读者只需将代码复制文件eclipse创建的项目对应文件夹下即可使用.
@@ -67,15 +67,15 @@ src目录用来存放服务端Java代码，WebContent用来存放前端页面的
 首次运行MyWebApp,请按照如下操作，才能启动项目:
 双击打开index.jsp文件，然后顶部Run菜单选择：Run As–>Run on Server
 
-![5-8](https://kfcoding-static.oss-cn-hangzhou.aliyuncs.com/gitcourse-bigdata/5-8_20180420073526.026.png)
+![5-8](/images/5-8_20180420073526.026.png)
 
 出现如下对话框，直接点击finish即可。
 
-![5-9](https://kfcoding-static.oss-cn-hangzhou.aliyuncs.com/gitcourse-bigdata/5-9_20180420073530.030.png)
+![5-9](/images/5-9_20180420073530.030.png)
 
 以后如果要再次运行MyWebApp,只需要直接启动Tomcat服务器即可，关闭服务器也可以通过如下图关闭。
 
-![5-10](https://kfcoding-static.oss-cn-hangzhou.aliyuncs.com/gitcourse-bigdata/5-10_20180420073534.034.png)
+![5-10](/images/5-10_20180420073534.034.png)
 
 ### 4. 重要代码解析
 整个项目，Java后端从数据库中查询的代码都集中在项目文件夹下/Java Resources/src/dbtaobao/connDb.java
@@ -289,18 +289,18 @@ ECharts包含各种各样的可视化图形，每种图形的逻辑代码，请�
 
 注意：由于ECharts更新，提供下载的中国矢量地图数据来自第三方，由于部分数据不符合国家《测绘法》规定，目前暂时停止下载服务。
 
-![5-11](https://kfcoding-static.oss-cn-hangzhou.aliyuncs.com/gitcourse-bigdata/5-11_20180420073537.037.png)
+![5-11](/images/5-11_20180420073537.037.png)
 
 ### 6. 页面效果
 最终，我自己使用饼图，散点图，柱状图，地图等完成了如下效果，读者如果觉得有更适合的可视化图形，也可以自己另行修改。
 最后展示所有页面的效果图：
 
-![5-12](https://kfcoding-static.oss-cn-hangzhou.aliyuncs.com/gitcourse-bigdata/5-12_20180420073541.041.png)
+![5-12](/images/5-12_20180420073541.041.png)
 
-![5-13](https://kfcoding-static.oss-cn-hangzhou.aliyuncs.com/gitcourse-bigdata/5-13_20180420073545.045.png)
+![5-13](/images/5-13_20180420073545.045.png)
 
-![5-14](https://kfcoding-static.oss-cn-hangzhou.aliyuncs.com/gitcourse-bigdata/5-14_20180420073549.049.png)
+![5-14](/images/5-14_20180420073549.049.png)
 
-![5-15](https://kfcoding-static.oss-cn-hangzhou.aliyuncs.com/gitcourse-bigdata/5-15_20180420073553.053.png)
+![5-15](/images/5-15_20180420073553.053.png)
 
 到这里，第五个步骤的实验内容结束，整个淘宝双11数据分析与预测课程案例到这里顺利完结！

@@ -178,7 +178,7 @@ awk -F "," 'BEGIN{
 在mysql中创建hive数据库，并赋予hive用户权限
 ```
 # mysql -u root -p
-// 提示输入密码，默认密码为 123456
+// 提示输入密码，默认密码为 123456，mysql如果登录不上，出现文件缺漏，建议重新安装mysql。
 mysql> grant all on *.* to hive@localhost identified by 'hive';
 mysql> alter database hive character set latin1;
 mysql> flush privileges;

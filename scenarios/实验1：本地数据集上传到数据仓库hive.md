@@ -192,7 +192,7 @@ mysql> exit
 # cd /usr/local/hive
 # ./bin/hive
 ```
-启动成功以后，就进入了“hive>”命令提示符状态，可以输入类似SQL语句的HiveQL语句。下面，我们要在Hive中创建一个数据库dbtaobao，命令如下：
+vi /usr/local/hive/bin/hive，将sparkAssemblyPath改为:sparkAssemblyPath=ls ${SPARK_HOME}/jars/*.jar 。启动成功以后，就进入了“hive>”命令提示符状态，可以输入类似SQL语句的HiveQL语句。下面，我们要在Hive中创建一个数据库dbtaobao，命令如下：
 ```
 hive>  create database dbtaobao;
 hive>  use dbtaobao;
